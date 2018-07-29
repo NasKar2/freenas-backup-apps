@@ -2,7 +2,7 @@
 
 ## Backup and Restore Freenas Apps Data
 
-Script to help backup and restore the Sonarr data directory
+Script to help backup and restore the Sonarr, Radarr, Lidarr data directory
 
 ### Prerequisites
 
@@ -57,9 +57,23 @@ BACKUP_PATH="backup"
 BACKUP_NAME="radarrbackup.tar.gz"
 ```
 
+Create file called LidarrBackup-config
+
+```
+cron=""
+LIDARR_JAIL_NAME="lidarr"
+POOL_PATH="/mnt/v1"
+APPS_PATH="apps"
+LIDARR_SOURCE="lidarr"
+LIDARR_DESTINATION="lidarr"
+BACKUP_PATH="backup"
+BACKUP_NAME="lidarrbackup.tar.gz
+```
+
 ## Install
 
 ```
 ./sonarrbackup.sh
 ./radarrbackup.sh
+./lidarrbackup.sh
 ```
