@@ -6,7 +6,7 @@ Script to help backup and restore the Sonarr, Radarr, Lidarr, Sabnzbd, and Tautu
 
 ### Prerequisites
 
-Create file called RadarrBackup-config
+Create file called SonarrBackup-config
 
 The cron variable allows you to backup without asking for user input if set to cron="yes"
 
