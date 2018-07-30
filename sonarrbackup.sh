@@ -121,6 +121,9 @@ elif [ $choice == "R" ] || [ $choice == "r" ]; then
       mkdir -p ${POOL_PATH}/${APPS_PATH}/${SONARR_DESTINATION}
       echo
       echo "mkdir -p ${POOL_PATH}/${APPS_PATH}/${SONARR_DESTINATION}"
+      echo
+      chowm -R media:media ${POOL_PATH}/${APPS_PATH}/${SONARR_DESTINATION}
+      echo "chown -R media:media ${POOL_PATH}/${APPS_PATH}/${SONARR_DESTINATION}"
     fi
   #tar xf sonarrbackup.tar.gz -C /mnt/v1/apps/plexpass2/
   iocage exec ${SONARR_JAIL_NAME} service sonarr stop

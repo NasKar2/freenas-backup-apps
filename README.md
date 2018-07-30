@@ -2,7 +2,7 @@
 
 ## Backup and Restore Freenas Apps Data
 
-Script to help backup and restore the Sonarr, Radarr, Lidarr data directory
+Script to help backup and restore the Sonarr, Radarr, Lidarr, Sabnzbd, and Tautulli data directory
 
 ### Prerequisites
 
@@ -70,10 +70,45 @@ BACKUP_PATH="backup"
 BACKUP_NAME="lidarrbackup.tar.gz
 ```
 
+Create file called SabnzbdBackup-config
+
+```
+cron=""
+SABNZBD_JAIL_NAME="sabnzbd"
+POOL_PATH="/mnt/v1"
+APPS_PATH="apps"
+SABNZBD_SOURCE="sabnzbd"
+SABNZBD_DESTINATION="sabnzbd"
+BACKUP_PATH="backup"
+BACKUP_NAME="sabnzbdbackup.tar.gz
+```
+Create file called TautulliBackup-config
+
+```
+cron=""
+TAUTULLI_JAIL_NAME="tautulli"
+POOL_PATH="/mnt/v1"
+APPS_PATH="apps"
+TAUTULLI_SOURCE="tautulli"
+TAUTULLI_DESTINATION="tautulli"
+BACKUP_PATH="backup"
+BACKUP_NAME="tautullibackup.tar.gz
+```
+
+
 ## Install
 
 ```
 ./sonarrbackup.sh
 ./radarrbackup.sh
 ./lidarrbackup.sh
+./sabnzbdbackup.sh
+./tautullibackup.sh
+```
+## To run all in a cronjob
+
+set cron="yes" in all the config files
+
+```
+./allbackup.sh
 ```

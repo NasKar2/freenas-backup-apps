@@ -1,0 +1,9 @@
+cron=""
+SABNZBD_JAIL_NAME="sabnzbd"
+POOL_PATH="/mnt/v1"
+APPS_PATH="apps"
+SABNZBD_SOURCE="sabnzbd"
+SABNZBD_DESTINATION="sabnzbd"
+BACKUP_PATH="backup"
+BACKUP_NAME="sabnzbdbackup.tar.gz"
+

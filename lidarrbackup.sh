@@ -121,6 +121,9 @@ elif [ $choice == "R" ] || [ $choice == "r" ]; then
       mkdir -p ${POOL_PATH}/${APPS_PATH}/${LIDARR_DESTINATION}
       echo
       echo "mkdir -p ${POOL_PATH}/${APPS_PATH}/${LIDARR_DESTINATION}"
+      echo
+      chowm -R media:media ${POOL_PATH}/${APPS_PATH}/${LIDARR_DESTINATION}
+      echo "chown -R media:media ${POOL_PATH}/${APPS_PATH}/${LIDARR_DESTINATION}"
     fi
   #tar xf lidarrbackup.tar.gz -C /mnt/v1/apps/plexpass2/
   iocage exec ${LIDARR_JAIL_NAME} service lidarr stop

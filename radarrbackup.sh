@@ -121,6 +121,9 @@ elif [ $choice == "R" ] || [ $choice == "r" ]; then
       mkdir -p ${POOL_PATH}/${APPS_PATH}/${RADARR_DESTINATION}
       echo
       echo "mkdir -p ${POOL_PATH}/${APPS_PATH}/${RADARR_DESTINATION}"
+      echo
+      chowm -R media:media ${POOL_PATH}/${APPS_PATH}/${RADARR_DESTINATION}
+      echo "chown -R media:media ${POOL_PATH}/${APPS_PATH}/${RADARR_DESTINATION}"
     fi
   #tar xf radarrbackup.tar.gz -C /mnt/v1/apps/plexpass2/
   iocage exec ${RADARR_JAIL_NAME} service radarr stop
