@@ -107,10 +107,10 @@ if [ ${choice} == "B" ] || [ ${choice} == "b" ]; then
   cd ${POOL_PATH}/${APPS_PATH}/${TAUTULLI_SOURCE}
   echo
   echo "cd ${POOL_PATH}/${APPS_PATH}/${TAUTULLI_SOURCE}"
-  tar --exclude='./*.lock' --exclude='backups' --exclude='cache' --exclude='logs' --exclude='newsletter' -zcvpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*
+  tar --exclude='./*.lock' --exclude='backups' --exclude='cache' --exclude='logs' --exclude='newsletters' -zcvpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*
 
   echo
-  echo "tar --exclude='./*.lock' --exclude='backups' --exclude='cache' --exclude='logs' --exclude='newsletter' -zcvpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*"
+  echo "tar --exclude='./*.lock' --exclude='backups' --exclude='cache' --exclude='logs' --exclude='newsletters' -zcvpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*"
   echo
   echo "Backup complete file located at ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME}"
   echo
