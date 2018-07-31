@@ -1,0 +1,5 @@
+SonarrBackup-config merge=ours
+RadarrBackup-config merge=ours
+LidarrBackup-config merge=ours
+SabnzbdBackup-config merge=ours
+TautulliBackup-config merge=ours
