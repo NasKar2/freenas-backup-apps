@@ -1,4 +1,4 @@
-cron=""
+cron="yes"
 SABNZBD_JAIL_NAME="sabnzbd"
 POOL_PATH="/mnt/v1"
 APPS_PATH="apps"

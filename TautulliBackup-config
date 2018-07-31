@@ -1,4 +1,4 @@
-cron=""
+cron="yes"
 TAUTULLI_JAIL_NAME="tautulli"
 POOL_PATH="/mnt/v1"
 APPS_PATH="apps"

@@ -1,4 +1,4 @@
-cron=""
+cron="yes"
 SONARR_JAIL_NAME="sonarr"
 POOL_PATH="/mnt/v1"
 APPS_PATH="apps"
