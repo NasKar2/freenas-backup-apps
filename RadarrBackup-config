@@ -1,4 +1,4 @@
-cron="yes"
+cron=""
 RADARR_JAIL_NAME="radarr"
 POOL_PATH="/mnt/v1"
 APPS_PATH="apps"
