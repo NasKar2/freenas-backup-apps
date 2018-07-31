@@ -6,7 +6,7 @@ Script to help backup and restore the Sonarr, Radarr, Lidarr, Sabnzbd, and Tautu
 
 ### Prerequisites
 
-Create file called SonarrBackup-config
+Edit each config file with your setup.  The config files will download when you do your git clone but any changes to the config files will not be overwritten when you do a 'git pull' to update to the latest version of the script. For example SonarrBackup-config
 
 The cron variable allows you to backup without asking for user input if set to cron="yes"
 
@@ -30,71 +30,10 @@ SONARR_DESTINATION="sonarr"
 BACKUP_PATH="backup"
 BACKUP_NAME="sonarrbackup.tar.gz"
 ```
-
-Create file called RadarrBackup-config
-
-The cron variable allows you to backup without asking for user input if set to cron="yes"
-
-The APPS_PATH is the directory in our pool to put the sonarr data. In our example that would be /mnt/v1/apps/
-
-The RADARR_SOURCE is the name of the sonarr data directory that is the source of the backup. In our example /mnt/v1/apps/sonarr/
-
-The RADARR_DESTINATION is the name of the sonarr data directory that is the destination of the backup data. In our example /mnt/v1/apps/sonarr/
-
-The BACKUP_PATH is the location in the pool for the backup file. In our example /mnt/v1/apps/
-
-THE BACKUP_NAME is the name of the backup file
-
-
-```
-cron=""
-RADARR_JAIL_NAME="radarr"
-POOL_PATH="/mnt/v1"
-APPS_PATH="apps"
-RADARR_SOURCE="radarr"
-RADARR_DESTINATION="radarr"
-BACKUP_PATH="backup"
-BACKUP_NAME="radarrbackup.tar.gz"
-```
-
-Create file called LidarrBackup-config
-
-```
-cron=""
-LIDARR_JAIL_NAME="lidarr"
-POOL_PATH="/mnt/v1"
-APPS_PATH="apps"
-LIDARR_SOURCE="lidarr"
-LIDARR_DESTINATION="lidarr"
-BACKUP_PATH="backup"
-BACKUP_NAME="lidarrbackup.tar.gz
-```
-
-Create file called SabnzbdBackup-config
-
-```
-cron=""
-SABNZBD_JAIL_NAME="sabnzbd"
-POOL_PATH="/mnt/v1"
-APPS_PATH="apps"
-SABNZBD_SOURCE="sabnzbd"
-SABNZBD_DESTINATION="sabnzbd"
-BACKUP_PATH="backup"
-BACKUP_NAME="sabnzbdbackup.tar.gz
-```
-Create file called TautulliBackup-config
-
-```
-cron=""
-TAUTULLI_JAIL_NAME="tautulli"
-POOL_PATH="/mnt/v1"
-APPS_PATH="apps"
-TAUTULLI_SOURCE="tautulli"
-TAUTULLI_DESTINATION="tautulli"
-BACKUP_PATH="backup"
-BACKUP_NAME="tautullibackup.tar.gz
-```
-
+Edit file called RadarrBackup-config
+Edit file called LidarrBackup-config
+Edit file called SabnzbdBackup-config
+Edit file called TautulliBackup-config
 
 ## Install
 
