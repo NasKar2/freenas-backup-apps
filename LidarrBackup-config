@@ -1,4 +1,4 @@
-cron="yes"
+cron=""
 LIDARR_JAIL_NAME="lidarr"
 POOL_PATH="/mnt/v1"
 APPS_PATH="apps"
