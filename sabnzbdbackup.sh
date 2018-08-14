@@ -102,18 +102,18 @@ if [ ${choice} == "B" ] || [ ${choice} == "b" ]; then
       echo "mkdir -p ${POOL_PATH}/${BACKUP_PATH}"
     fi
   # to backup
-  iocage exec ${SABNZBD_JAIL_NAME} service sabnzbd stop
+#  iocage exec ${SABNZBD_JAIL_NAME} service sabnzbd stop
   cd ${POOL_PATH}/${APPS_PATH}/${SABNZBD_SOURCE}
   echo
   echo "cd ${POOL_PATH}/${APPS_PATH}/${SABNZBD_SOURCE}"
-  tar -zcvpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*
+  tar -zcpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*
 
   echo
-  echo "tar -zcvpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*"
+  echo "tar -zcpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*"
   echo
   echo "Backup complete file located at ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME}"
   echo
-  iocage exec ${SABNZBD_JAIL_NAME} service sabnzbd start
+#  iocage exec ${SABNZBD_JAIL_NAME} service sabnzbd start
 elif [ $choice == "R" ] || [ $choice == "r" ]; then
   # to restore sabnzbdbackup to directory
     if [ ! -d "${POOL_PATH}/${APPS_PATH}/${SABNZBD_DESTINATION}" ]; then

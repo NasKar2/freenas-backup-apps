@@ -103,18 +103,18 @@ if [ ${choice} == "B" ] || [ ${choice} == "b" ]; then
     fi
   # to backup
   #tar --exclude=./*.db-* -zcvf /mnt/v1/apps/tautullibackup.tar.gz ./
-  iocage exec ${TAUTULLI_JAIL_NAME} service tautulli stop
+#  iocage exec ${TAUTULLI_JAIL_NAME} service tautulli stop
   cd ${POOL_PATH}/${APPS_PATH}/${TAUTULLI_SOURCE}
   echo
   echo "cd ${POOL_PATH}/${APPS_PATH}/${TAUTULLI_SOURCE}"
-  tar --exclude='./*.lock' --exclude='backups' --exclude='cache' --exclude='logs' --exclude='newsletters' -zcvpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*
+  tar --exclude='./*.lock' --exclude='backups' --exclude='cache' --exclude='logs' --exclude='newsletters' -zcpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*
 
   echo
-  echo "tar --exclude='./*.lock' --exclude='backups' --exclude='cache' --exclude='logs' --exclude='newsletters' -zcvpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*"
+  echo "tar --exclude='./*.lock' --exclude='backups' --exclude='cache' --exclude='logs' --exclude='newsletters' -zcpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*"
   echo
   echo "Backup complete file located at ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME}"
   echo
-  iocage exec ${TAUTULLI_JAIL_NAME} service tautulli start
+ # iocage exec ${TAUTULLI_JAIL_NAME} service tautulli start
 elif [ $choice == "R" ] || [ $choice == "r" ]; then
   # to restore tautullibackup to directory
     if [ ! -d "${POOL_PATH}/${APPS_PATH}/${TAUTULLI_DESTINATION}" ]; then

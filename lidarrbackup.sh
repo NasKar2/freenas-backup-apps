@@ -107,10 +107,10 @@ if [ ${choice} == "B" ] || [ ${choice} == "b" ]; then
   cd ${POOL_PATH}/${APPS_PATH}/${LIDARR_SOURCE}
   echo
   echo "cd ${POOL_PATH}/${APPS_PATH}/${LIDARR_SOURCE}"
-  tar --exclude='./lidarr.db-*' --exclude='lidarr.pid' -zcvpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*
+  tar --exclude='./lidarr.db-*' --exclude='lidarr.pid' -zcpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*
 
   echo
-  echo "tar --exclude='./lidarr.db-*' --exclude='lidarr.pid' -zcvpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*"
+  echo "tar --exclude='./lidarr.db-*' --exclude='lidarr.pid' -zcpf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./*"
   echo
   echo "Backup complete file located at ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME}"
   echo
