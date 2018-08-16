@@ -6,7 +6,7 @@
 git clone https://github.com/NasKar2/backupapps-freenas-iocage.git
 ```
 
-to prevent edit to the config files from being changed with a git pull
+to prevent edits to the config files from being changed with a git pull
 
 ```
 git update-index --skip-worktree *-config
