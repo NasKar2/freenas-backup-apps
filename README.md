@@ -1,5 +1,17 @@
 # backupapps-freenas-iocage
 
+## Clone git repository
+
+```
+git clone https://github.com/NasKar2/backupapps-freenas-iocage.git
+```
+
+to prevent edit to the config files from being changed with a git pull
+
+```
+git update-index --skip-worktree *-config
+```
+
 ## Backup and Restore Freenas Apps Data
 
 Script to help backup and restore the Sonarr, Radarr, Lidarr, Sabnzbd, and Tautulli data directory
