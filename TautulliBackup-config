@@ -1,0 +1,9 @@
+cron=""
+TAUTULLI_JAIL_NAME="tautulli"
+POOL_PATH="/mnt/v1"
+APPS_PATH="apps"
+TAUTULLI_SOURCE="tautulli"
+TAUTULLI_DESTINATION="tautulli"
+BACKUP_PATH="backup"
+BACKUP_NAME="tautullibackup.tar.gz"
+
