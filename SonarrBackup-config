@@ -1,9 +1,0 @@
-cron=""
-SONARR_JAIL_NAME="sonarr"
-POOL_PATH="/mnt/v1"
-APPS_PATH="apps"
-SONARR_SOURCE="sonarr"
-SONARR_DESTINATION="sonarr"
-BACKUP_PATH="backup"
-BACKUP_NAME="sonarrbackup.tar.gz"
-
