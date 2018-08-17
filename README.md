@@ -14,7 +14,7 @@ git update-index --skip-worktree *-config
 
 ## Backup and Restore Freenas Apps Data
 
-Script to help backup and restore the Sonarr, Radarr, Lidarr, Sabnzbd, and Tautulli data directory
+Script to help backup and restore the Sonarr, Radarr, Lidarr, Sabnzbd, Wordpress and Tautulli data directory
 
 ### Prerequisites
 
@@ -46,6 +46,7 @@ Edit file called RadarrBackup-config
 Edit file called LidarrBackup-config
 Edit file called SabnzbdBackup-config
 Edit file called TautulliBackup-config
+Edit file called WordpressBackup-config
 
 ## Install
 
@@ -55,6 +56,7 @@ Edit file called TautulliBackup-config
 ./lidarrbackup.sh
 ./sabnzbdbackup.sh
 ./tautullibackup.sh
+./wpBackup.sh
 ```
 ## To run all in a cronjob
 

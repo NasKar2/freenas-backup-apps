@@ -1,0 +1,13 @@
+cron=""
+POOL_PATH="/mnt/v1"
+APPS_PATH="apps"
+CONFIG_PATH="config"
+JAIL_NAME="wordpress"
+WP_SOURCE="wordpress"
+WP_DESTINATION="wpbackup"
+BACKUP_PATH="backup"
+BACKUP_NAME="wpbackup.tar.gz"
+DATABASE_NAME="wordpress"
+DB_BACKUP_NAME="wordpress.sql"
+DB_PASSWORD="yourdatabasepassword"
+
