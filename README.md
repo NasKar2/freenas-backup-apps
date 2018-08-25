@@ -43,10 +43,18 @@ BACKUP_PATH="backup"
 BACKUP_NAME="sonarrbackup.tar.gz"
 ```
 Edit file called RadarrBackup-config
+
 Edit file called LidarrBackup-config
+
 Edit file called SabnzbdBackup-config
+
 Edit file called TautulliBackup-config
-Edit file called WordpressBackup-config
+
+Edit file called WordpressBackup-config.  Change yourdbpassword to the mariadb password and set the file permission to 400.
+
+```
+chmod 400 WordpressBackup-config
+```
 
 ## Install
 
