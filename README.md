@@ -50,7 +50,7 @@ Edit file called SabnzbdBackup-config
 
 Edit file called TautulliBackup-config
 
-Edit file called WordpressBackup-config.  Change yourdbpassword to the mariadb password and set the file permission to 400.
+Edit file called WordpressBackup-config.  Change yourdatabasepassword to the mariadb password and set the file permission to 400.
 
 ```
 chmod 400 WordpressBackup-config
