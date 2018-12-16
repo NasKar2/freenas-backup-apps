@@ -115,6 +115,7 @@ fi
 echo
 if [ "${cron}" == "yes" ]; then
     choice="B"
+#echo "cron = $cron"
 fi
 echo
 if [ ${choice} == "B" ] || [ ${choice} == "b" ]; then
@@ -126,6 +127,7 @@ if [ ${choice} == "B" ] || [ ${choice} == "b" ]; then
   #tar --exclude=./Plex\ Media\ Server/Cache -zcvf /mnt/v1/apps/wordpressbackup.tar.gz ./
 #iocage exec ${JAIL_NAME} "mysqldump --single-transaction -h localhost -u "root" -p"${DB_PASSWORD}" "${DATABASE_NAME}" > "/${POOL_PATH}/${APPS_PATH}/${WP_SOURCE}/${DB_BACKUP_NAME}""
 iocage exec ${JAIL_NAME} "mysqldump --single-transaction -h localhost -u "root" -p"${DB_PASSWORD}" "${DATABASE_NAME}" > "/${CONFIG_PATH}/${DB_BACKUP_NAME}""
+#iocage exec ${JAIL_NAME} "mysqldump --defaults-extra-file=.my.cnf -u root "${DATABASE_NAME}" --single-transaction --quick --lock-tables=false > "/${CONFIG_PATH}/${DB_BACKUP_NAME}""
 echo "Wordpress database backup ${DB_BACKUP_NAME} complete"
 #ls -l /${POOL_PATH}/${BACKUP_PATH}/
   cd ${POOL_PATH}/${APPS_PATH}/${WP_SOURCE}
