@@ -1,0 +1,9 @@
+cron="yes"
+LAZYLIBRARIAN_JAIL_NAME="lazylibrarian"
+POOL_PATH="/mnt/v1"
+APPS_PATH="apps"
+LAZYLIBRARIAN_SOURCE="lazylibrarian"
+LAZYLIBRARIAN_DESTINATION="lazylibrarian"
+BACKUP_PATH="backup"
+BACKUP_NAME="lazylibrarianbackup.tar.gz"
+
