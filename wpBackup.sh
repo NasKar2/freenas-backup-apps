@@ -135,6 +135,7 @@ echo "Wordpress database backup ${DB_BACKUP_NAME} complete"
   tar -zcf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./
   echo "tar-zcvf ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME} ./"
   echo "Backup complete file located at ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME}"
+  chmod 400 ${POOL_PATH}/${BACKUP_PATH}/${BACKUP_NAME}
 elif [ $choice == "R" ] || [ $choice == "r" ]; then
   # to restore wordpressbackup to directory wordpresspass2
     if [ ! -d "${POOL_PATH}/${APPS_PATH}/${WP_DESTINATION}" ]; then
