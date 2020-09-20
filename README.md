@@ -1,4 +1,6 @@
-# backupapps-freenas-iocage
+# freenas-backup-apps
+
+### Use freenas-backup-appsdir instead.  Only one config and does all the jail apps.
 
 ## Clone git repository
 
